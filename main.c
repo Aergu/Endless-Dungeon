@@ -1,65 +1,59 @@
-#include <stdio.h>
-#include <raylib.h>
+#include "raylib.h"
 #include <stdlib.h>
 #include <time.h>
 
-#define WIDTH 20
-#define HEIGHT 10
-#define ROOM_COUNT 5
-#define TILE_SIZE 40
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
+#define TILE_SIZE 20
+#define MAP_WIDTH 40
+#define MAP_HEIGHT 30
 
-char dungeon[HEIGHT][WIDTH];
+typedef struct {
+    int x, y;
+} Player;
 
+int map[MAP_HEIGHT][MAP_WIDTH];
 
-void initDungeon() {
-    for (int y = 0; y < HEIGHT; y++) {
-        for (int x = 0; x < WIDTH; x++) {
-            dungeon[y][x] = '#';
+void InitializeMap() {
+    for (int y = 0; y < MAP_HEIGHT; y++) {
+        for (int x = 0; x < MAP_WIDTH; x++) {
+            map[y][x] = 1;  // 1 is a wall
+        }
+    }
+
+    for (int x = 1; x < MAP_WIDTH - 1; x++) {
+        map[MAP_HEIGHT / 2][x] = 0;  // 0 is a path
+    }
+}
+
+void DrawMap() {
+    for (int y = 0; y < MAP_HEIGHT; y++) {
+        for (int x = 0; x < MAP_WIDTH; x++) {
+            Color color = map[y][x] == 1 ? DARKGRAY : LIGHTGRAY;
+            DrawRectangle(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE, color);
         }
     }
 }
 
-
-void createRooms() {
-    for (int i = 0; i < ROOM_COUNT; i++) {
-        int w = 3 + rand() % 4;
-        int h = 3 + rand() % 4;
-        int x = rand() % (WIDTH - w - 1);
-        int y = rand() % (HEIGHT - h - 1);
-
-        for (int dy = 0; dy < h; dy++) {
-            for (int dx = 0; dx < w; dx++) {
-                dungeon[y + dy][x + dx] = '.';  // Floor
-            }
-        }
-    }
-}
-
-
-void drawDungeon() {
-    for (int y = 0; y < HEIGHT; y++) {
-        for (int x = 0; x < WIDTH; x++) {
-            Color tileColor = (dungeon[y][x] == '#') ? DARKGRAY : LIGHTGRAY;
-            DrawRectangle(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE, tileColor);
-        }
-    }
-}
-
-int main() {
-    srand(time(NULL));
-
-    initDungeon();
-    createRooms();
-
-    InitWindow(WIDTH * TILE_SIZE, HEIGHT * TILE_SIZE, "Procedural Dungeon");
+int main(void) {
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Dungeon Crawler with Raylib");
     SetTargetFPS(60);
 
+    Player player = {1, MAP_HEIGHT / 2};
+    InitializeMap();
+
     while (!WindowShouldClose()) {
+
+        if (IsKeyDown(KEY_W) && map[player.y - 1][player.x] == 0) player.y--;
+        if (IsKeyDown(KEY_S) && map[player.y + 1][player.x] == 0) player.y++;
+        if (IsKeyDown(KEY_A) && map[player.y][player.x - 1] == 0) player.x--;
+        if (IsKeyDown(KEY_D) && map[player.y][player.x + 1] == 0) player.x++;
+
+
         BeginDrawing();
-        ClearBackground(BLACK);
-
-        drawDungeon();  
-
+        ClearBackground(RAYWHITE);
+        DrawMap();
+        DrawRectangle(player.x * TILE_SIZE, player.y * TILE_SIZE, TILE_SIZE, TILE_SIZE, RED);
         EndDrawing();
     }
 
