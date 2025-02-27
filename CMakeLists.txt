@@ -7,7 +7,7 @@ project(Endless_Dungeon C)
 set(CMAKE_C_STANDARD 11)
 
 # Set Raylib directory path
-set(RAYLIB_DIR "D:/joshua_aroka/raylib/raylib/src")
+set(RAYLIB_DIR "C:/raylib/raylib/src")
 
 # Include Raylib
 include_directories(${RAYLIB_DIR})

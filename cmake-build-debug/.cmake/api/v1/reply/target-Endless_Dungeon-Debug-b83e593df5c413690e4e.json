@@ -66,7 +66,7 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "D:/joshua_aroka/raylib/raylib/src"
+					"path" : "C:/raylib/raylib/src"
 				}
 			],
 			"language" : "C",
@@ -99,7 +99,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LD:\\joshua_aroka\\raylib\\raylib\\src",
+				"fragment" : "-LC:\\raylib\\raylib\\src",
 				"role" : "libraryPath"
 			},
 			{

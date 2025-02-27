@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/LENOVO-2022/Documents/GitHub/Endless-Dungeon/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target Endless_Dungeon
 
@@ -49,10 +49,10 @@ cmake_ninja_workdir = D$:/joshua_aroka/github_repository_projects/projects/Endle
 
 build cmake_object_order_depends_target_Endless_Dungeon: phony || .
 
-build CMakeFiles/Endless_Dungeon.dir/main.c.obj: C_COMPILER__Endless_Dungeon_unscanned_Debug D$:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/main.c || cmake_object_order_depends_target_Endless_Dungeon
+build CMakeFiles/Endless_Dungeon.dir/main.c.obj: C_COMPILER__Endless_Dungeon_unscanned_Debug C$:/Users/LENOVO-2022/Documents/GitHub/Endless-Dungeon/main.c || cmake_object_order_depends_target_Endless_Dungeon
   DEP_FILE = CMakeFiles\Endless_Dungeon.dir\main.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -ID:/joshua_aroka/raylib/raylib/src
+  INCLUDES = -IC:/raylib/raylib/src
   OBJECT_DIR = CMakeFiles\Endless_Dungeon.dir
   OBJECT_FILE_DIR = CMakeFiles\Endless_Dungeon.dir
 
@@ -67,7 +67,7 @@ build CMakeFiles/Endless_Dungeon.dir/main.c.obj: C_COMPILER__Endless_Dungeon_uns
 build Endless_Dungeon.exe: C_EXECUTABLE_LINKER__Endless_Dungeon_Debug CMakeFiles/Endless_Dungeon.dir/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lraylib  -lopengl32  -lgdi32  -lwinmm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LD:/joshua_aroka/raylib/raylib/src
+  LINK_PATH = -LC:/raylib/raylib/src
   OBJECT_DIR = CMakeFiles\Endless_Dungeon.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -80,7 +80,7 @@ build Endless_Dungeon.exe: C_EXECUTABLE_LINKER__Endless_Dungeon_Debug CMakeFiles
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\joshua_aroka\github_repository_projects\projects\Endless_Dungeon\Endless-Dungeon\cmake-build-debug && "D:\JetBrains\CLion\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\LENOVO-2022\Documents\GitHub\Endless-Dungeon\cmake-build-debug && "D:\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -91,7 +91,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\joshua_aroka\github_repository_projects\projects\Endless_Dungeon\Endless-Dungeon\cmake-build-debug && "D:\JetBrains\CLion\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\joshua_aroka\github_repository_projects\projects\Endless_Dungeon\Endless-Dungeon -BD:\joshua_aroka\github_repository_projects\projects\Endless_Dungeon\Endless-Dungeon\cmake-build-debug"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\LENOVO-2022\Documents\GitHub\Endless-Dungeon\cmake-build-debug && "D:\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\LENOVO-2022\Documents\GitHub\Endless-Dungeon -BC:\Users\LENOVO-2022\Documents\GitHub\Endless-Dungeon\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -109,7 +109,7 @@ build Endless_Dungeon: phony Endless_Dungeon.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/cmake-build-debug
+# Folder: C:/Users/LENOVO-2022/Documents/GitHub/Endless-Dungeon/cmake-build-debug
 
 build all: phony Endless_Dungeon.exe
 
@@ -120,14 +120,14 @@ build all: phony Endless_Dungeon.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake D$:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Users/LENOVO-2022/Documents/GitHub/Endless-Dungeon/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/JetBrains/CLion/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake D$:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/CMakeLists.txt: phony
+build C$:/Users/LENOVO-2022/Documents/GitHub/Endless-Dungeon/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################
