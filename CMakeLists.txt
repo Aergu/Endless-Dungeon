@@ -7,7 +7,7 @@ project(Endless_Dungeon C)
 set(CMAKE_C_STANDARD 11)
 
 # Set Raylib directory path
-set(RAYLIB_DIR "C:/raylib/raylib/src")
+set(RAYLIB_DIR "D:/joshua_aroka/raylib/raylib/src")
 
 # Include Raylib
 include_directories(${RAYLIB_DIR})
@@ -15,7 +15,10 @@ link_directories(${RAYLIB_DIR})
 
 
 # Add the executable using the dynamically set project name
-add_executable(Endless_Dungeon main.c)
+add_executable(Endless_Dungeon main.c
+        Player_settings.h
+        Dungeon_settings.h
+        Player_settings.c)
 
 # Link Raylib and required system libraries
 target_link_libraries(Endless_Dungeon raylib opengl32 gdi32 winmm)
