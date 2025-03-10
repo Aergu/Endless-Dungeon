@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Endless_Dungeon::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Endless_Dungeon-Debug-9b4c5db8ec81f9d90c5a.json",
+					"jsonFile" : "target-Endless_Dungeon-Debug-46c83ee3da1bdfc8cb7a.json",
 					"name" : "Endless_Dungeon",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/cmake-build-debug",
-		"source" : "D:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon"
+		"build" : "D:/joshua_aroka/github_repository_projects/projects/Endless-Dungeon/cmake-build-debug",
+		"source" : "D:/joshua_aroka/github_repository_projects/projects/Endless-Dungeon"
 	},
 	"version" : 
 	{

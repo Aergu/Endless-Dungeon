@@ -5,6 +5,9 @@
 #ifndef DUNGEON_SETTINGS_H
 #define DUNGEON_SETTINGS_H
 
+
+#include "raylib.h"
+
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
 #define TILE_SIZE 20
@@ -14,8 +17,7 @@
 #define MAX_ROOMS 20
 #define MIN_ROOM_SIZE 5
 #define MAX_ROOM_SIZE 10
-
-#include "Player_settings.h"
+#include <stdlib.h>
 
 typedef enum {
     GAME_PLAYING,
@@ -30,10 +32,17 @@ typedef struct {
     int x, y, width, height;
 } Room;
 
+typedef struct {
+    int x;
+    int y;
+    int offset_x;
+    int offset_y;
+} Player;
+
 int map[MAP_HEIGHT][MAP_WIDTH];
 Room rooms[MAX_ROOMS];
 int roomCount = 0;
-//Player player;
+Player player;
 Cell exitDoor;
 GameState gameState = GAME_PLAYING;
 

@@ -1,4 +1,4 @@
-# Install script for directory: D:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon
+# Install script for directory: D:/joshua_aroka/github_repository_projects/projects/Endless-Dungeon
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/joshua_aroka/github_repository_projects/projects/Endless-Dungeon/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

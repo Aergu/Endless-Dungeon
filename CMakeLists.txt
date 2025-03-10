@@ -18,7 +18,7 @@ link_directories(${RAYLIB_DIR})
 add_executable(Endless_Dungeon main.c
         Player_settings.h
         Dungeon_settings.h
-        Player_settings.c)
+)
 
 # Link Raylib and required system libraries
 target_link_libraries(Endless_Dungeon raylib opengl32 gdi32 winmm)

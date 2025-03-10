@@ -1,4 +1,4 @@
-"D:\JetBrains\CLion\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/JetBrains/CLion/CLion 2024.3.1.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\joshua_aroka\github_repository_projects\projects\Endless_Dungeon\Endless-Dungeon -B D:\joshua_aroka\github_repository_projects\projects\Endless_Dungeon\Endless-Dungeon\cmake-build-debug
--- Configuring done (0.4s)
+"D:\JetBrains\CLion\CLion 2024.3.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S D:\joshua_aroka\github_repository_projects\projects\Endless-Dungeon -B D:\joshua_aroka\github_repository_projects\projects\Endless-Dungeon\cmake-build-debug
+-- Configuring done (0.2s)
 -- Generating done (0.1s)
--- Build files have been written to: D:/joshua_aroka/github_repository_projects/projects/Endless_Dungeon/Endless-Dungeon/cmake-build-debug
+-- Build files have been written to: D:/joshua_aroka/github_repository_projects/projects/Endless-Dungeon/cmake-build-debug
